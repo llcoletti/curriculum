@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;    
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    
+    background-image: url(/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    animation: slideDown 1s;
+    
+}
+
+
+
+ul{
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    width: 600px;
+    height: 100px;
+}
+
+li{
+    transition: 0.5s;
+}
+li:hover{
+    transform: translate3d(0, -5px, 0);
+}
+
+li a{
+    text-decoration: none;
+    color:inherit;
+}
+
+.container{
+    animation: fadein 1s;
+
+    display: flex;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 4rem;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 650px;
+}
+
+
+.foto{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*margin-top: -75px;*/
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.foto img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.nome{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(32, 32, 32);
+}
+
+.profession{
+    height: 50px;
+    color: rgb(134, 134, 134);
+    padding-bottom: 2rem;
+}
+
+.projects{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    min-width: 600px;
+}
+
+.icons{
+    transform: scale(2);
+    width: 50px;
+    height: auto;
+    margin-left: 3.5rem;
+    color: rgb(90, 90, 90);
+}
+
+.detail{
+    font-weight: bold;
+    color: rgb(121, 25, 247);
+}
+
+.descricao{
+    color: rgb(53, 53, 53);
+    font-size: 16px;
+    font-weight:lighter;
+    text-align: center;
+}
+
+.contato{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 150px;
+}
+
+.contato i{
+    transform: scale(2);
+    color:  rgb(32, 32, 32);
+    text-decoration: none;
+}
+
+/* Escolaridade */
+.contetWrapper{
+    margin-top: 2rem;
+}
+h3{
+    color: rgb(34, 34, 34);
+    font-size: 16px;
+}
+
+.lighter-text{
+    font-weight: lighter;  
+    color: rgb(126, 126, 126);  
+}
+
+.italic-text{
+    font-style: italic;
+    font-weight: lighter
+}
+
+.historicoEscolar{
+    margin-bottom: 2rem;
+    justify-content: left;
+}
+
+/*CARREIRA*/
+.carreira{
+    margin-top: 2rem;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.teste{
+    margin-top: 1rem;
+    color: rgb(121, 121, 121);
+}
+
+/* CARDS */
+
+.container-cards{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    height: 550px;
+
+    animation: 1s fadein ;
+}
+
+.card{
+    transition: 0.5s;
+    border-radius:10px ;
+    overflow: hidden;
+    height: fit-content;
+    min-height: 450px;
+    width: 300px;
+
+    box-shadow: 0 0 5px 0px rgb(104, 104, 104);
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.card-content h3{
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+.card-content span{
+    font-size: 14px;
+    text-align: center;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit:cover;
+}
+
+/* keyframes */
+
+@keyframes fadein {
+    from { opacity: 0}
+    to   { opacity: 1}
+  }
+
+@keyframes slideDown{
+    from{
+        transform: translateY(-30%);
+    }
+    to{
+        transform: translateY(0);
+
+    }
+}
+
+@keyframes slideUp{
+    from{
+        transform: translateY(-30%);
+    }
+    to{
+        transform: translateY(0);
+
+    }
+}
+
+
+footer{
+    margin-top:auto; 
+  }
