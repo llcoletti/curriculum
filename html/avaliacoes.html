@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a3cef22fa6.js" crossorigin="anonymous"></script>   
+
+    <script type="text/javascript">        
+    </script>
+
+</head>
+<body>
+   
+    <header class="main">
+        <ul >
+            <li class="inicio">
+                <a href="./index.html">Inicio</a>
+            </li>
+            <li class="escolaridade">
+                <a href=".nivel_escolaridade.html">Escolaridade</a>
+            </li>
+            <li class="idiomas">
+                <a href="Idiomas.html">Idiomas</a>
+            </li>
+            <li class="experiencias">
+                <a href="experiencia.html">Experiencias</a>
+            </li>
+            <li class="hobbies">
+                <a href="gostos-pessoais.html">Hobbies</a>
+            </li>
+            <li class="videos">
+                <a href="videos.html">Vídeos</a>
+            </li>
+            <li class="avaliacoes">
+                <a href="avaliacoes.html">Avaliações</a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="container ">
+        <span class="nome"> <span class="detail">A</span>valiações</span>       
+
+        <div class="wrapper-avaliacao"> 
+            
+            <!-- <div class="avaliacao">
+                <div class="comentario">
+                    <span class="categoria small-comment">Escolaridade</span>
+                    <span class="descricao">asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd</span>
+                    <span class="small-comment">Autor: asdasdasdasd</span>
+                </div>
+                <div class="nota">
+                    <span>3</span>
+                </div>
+            </div> -->
+        </div>
+
+        <button class="avaliar">AVALIAR</button>     
+    </div>
+
+    <div class="modal ">
+        <div class="content">
+            <div class="content-header">
+                <span>Avaliação</span>
+            </div>           
+            <form action="" class="formulario">
+                <label for="categoria">Categorias</label>
+                <select name="categoria" id="modal-categoria">
+                    <option value="invalida">Seleciona uma categoria</option>
+                    <option value="Inicio">Inicio</option>
+                    <option value="Escolaridade">Escolaridade</option>
+                    <option value="Idiomas">Idiomas</option>
+                    <option value="Experiencia">Experiências</option>
+                    <option value="Hobbies">Hobbies</option>
+                    <option value="Videos">Vídeos</option>
+                </select>
+                <small class="error-categoria">Seleciona uma categoria válida</small>   
+                <label for="nome" >Nome</label>
+                <input type="text" name="nome" id="modal-nome" maxlength="50" placeholder="Ex: Lucas Lisboa Coletti">   
+                <small class="error-nome">Nome inválido: apenas letras são permitidas</small>   
+                <div class="descricao-wrapper"></div>          
+                <label for="descricao" class="modal-descricao">Descrição</label>
+                <textarea name="descricao" id="modal-descricao" maxlength="200" placeholder="Mínimo 100 caracteres"></textarea>
+                <small class="letter-count">Caracteres disponíveis: <span class="count-value"></span></small>
+                <small class="error-descricao">Descrição inválida: descrição deve conter entre 100 e 200 digitos</small>
+                <div class="range-avaliacao">                    
+                    <div class="input-wrapper">
+                        <label for="nota" class="modal-nota">Nota</label>  
+                        <input class="value-nota" id="modal-nota" type="text" name="nota" maxlength="4" placeholder="10.00">
+                    </div>
+                    <small class="error-nota">Valor inválido: insira um valor inteiro ou decimal entre 0 e 10</small>
+                </div>
+                <div class="buttons">
+                    <button class="voltar">Voltar</button>
+                    <button type="submit" class="enviar" value="Submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="contato">
+            <a href="https://www.instagram.com/negoinblack/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/lucas.l.coletti" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://wa.me/5551996949554?text=Olá" target="_blank">
+                <i class="fa-brands fa-whatsapp" style="z-index: 0";></i>
+            </a>
+        </div>
+    </footer>
+    
+<script type='module' src="/js/script.js"></script>
+</body>
+</html>
